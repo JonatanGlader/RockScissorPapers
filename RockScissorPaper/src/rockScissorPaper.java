@@ -10,12 +10,12 @@ public class rockScissorPaper {
 	public static void main(String[] args) {
 		
 		boolean twoPlayers = false;
-		twoPlayers = modeSelect();
+		twoPlayers = modeSelect(); //Player selects mode, either 1 player or 2 players
 		
-		System.out.println(twoPlayers);
-		rps(twoPlayers);
 		
-		if(p1Score == 2)
+		rps(twoPlayers); //rps = rokPaperScissor, starts the game and plays 3 rounds
+		
+		if(p1Score == 2) //checks which player that won after 3 rounds are done
 		{
 			System.out.println(player1 +" Congratulations, you have won!");
 		}
@@ -23,6 +23,7 @@ public class rockScissorPaper {
 		{
 			System.out.println(player2 +" Congratulations, you have won!");
 		}
+		
 		System.out.println("Thanks for playing!");
 		reader.close();
 		
@@ -30,18 +31,17 @@ public class rockScissorPaper {
 	
 	static void rps(boolean bot) //RPS, Here is where the game starts to play
 	{
-		System.out.println(bot);
 		if (bot==false) //if gamemode is player vs player
 		{
 			String p1Hand;
 			String p2Hand;
-			//player1 = setName(1); //Players sets their names
-			//player2 = setName(2);
-			player1 = "jonte";
-			player2 = "gabe";
+			player1 = setName(1); //Players sets their names
+			player2 = setName(2);
+			//player1 = "jonte";
+			//player2 = "gabe";
 			System.out.println("let's play! Best out of 3!");
 			
-			for (int i = 0; i<3; i++)
+			for (int i = 0; i<3; i++) //loop to play 3 rounds
 			{
 				System.out.println(player1 + " has: " + p1Score + " score\n" + player2 + " has: " + p2Score + " score\n");
 				p1Hand = takeTurn(player1); //lets player1 choose hand
@@ -58,7 +58,7 @@ public class rockScissorPaper {
 			player2 = "Computer";
 			System.out.println("let's play! Best out of 3!");
 			
-			for (int i = 0; i<3; i++)
+			for (int i = 0; i<3; i++) //loop to play 3 rounds
 			{
 				System.out.println(player1 + " has: " + p1Score + " score\n" + player2 + " has: " + p2Score + " score\n");
 				p1Hand = takeTurn(player1); //lets player1 choose hand
