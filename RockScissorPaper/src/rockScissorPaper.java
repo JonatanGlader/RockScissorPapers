@@ -22,8 +22,7 @@ public class rockScissorPaper {
 		else if (p2Score == 2)
 		{
 			System.out.println(player2 +" Congratulations, you have won!");
-		}
-		
+		}		
 		System.out.println("Thanks for playing!");
 		reader.close();
 		
