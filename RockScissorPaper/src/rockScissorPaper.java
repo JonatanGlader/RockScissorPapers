@@ -30,7 +30,7 @@ public class rockScissorPaper {
 	
 	static void rps(boolean bot) //RPS, Here is where the game starts to play
 	{
-		if (bot==false) //if gamemode is player vs player
+		if (bot==false) //if gamemode is player vs player 
 		{
 			String p1Hand;
 			String p2Hand;
