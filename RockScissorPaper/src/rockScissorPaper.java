@@ -12,8 +12,8 @@ public class rockScissorPaper {
 		boolean twoPlayers = false;
 		twoPlayers = modeSelect(); //Player selects mode, either 1 player or 2 players
 		
-		
 		rps(twoPlayers); //rps = rokPaperScissor, starts the game and plays 3 rounds
+		
 		
 		if(p1Score == 2) //checks which player that won after 3 rounds are done
 		{
